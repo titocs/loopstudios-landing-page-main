@@ -23,7 +23,12 @@ body {
 header {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/desktop/image-hero.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     height: 650px;
+}
+
+.hamburger {
+    display: none;
 }
 
 .navigation {
@@ -99,15 +104,19 @@ a:hover:after {
 }
 
 main {
-    height: 326vh;
+    height: 310vh;
 }
 
 .mid-content {
-    height: 690px;
+    height: 660px;
 }
 
 .image-wrapper {
     position: relative;
+    height: 496px;
+    width: 719px;
+    background-image: url(images/desktop/image-interactive.jpg);
+    background-size: cover;
     margin-left: 160px;
     margin-top: 160px;
 }
@@ -185,15 +194,9 @@ main {
     width: 256px;
     height: 450px;
     margin-bottom: 35px;
+    position: relative;
 }
 
- .container-image {
-
-}
-
-.container-image:hover {
-    opacity: 0.3;
-}
 
 /* .satu:hover, .dua:hover, .tiga:hover, .empat:hover, .lima:hover, .enam:hover, .tujuh:hover, .delapan:hover {
     filter: brightness(100%);
@@ -317,5 +320,208 @@ footer {
 .attribution a { color: hsl(228, 45%, 44%); }
 
 @media (max-width: 375px){
+    body {
+        width: 375px;
+    }
+
+    header {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/mobile/image-hero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .navigation {
+        margin-left: 23px;
+        padding-top: 27px;
+        width: 332px;
+    }
+
+    .title-content {
+        width: 332px;
+        margin-left: 23px;
+        height: 210px;
+    }
+
+    .title-content > p {
+        font-size: 37px;
+        margin-top: 40px;
+        margin-left: 26px;
+        width: 255px;
+    }
+
+    .hamburger {
+        display: block;
+        height: 21px;
+        width: 25px;
+        float: left;
+        margin-left: 127px;
+        margin-top: 19px;
+    }
+
+    .navigation > ul > li {
+        display: none;
+    }
+
+    main {
+        width: 375px;
+    }
+
+    .image-wrapper {
+        background-image: url(images/mobile/image-interactive.jpg);
+        background-size: cover;
+        height: 224px;
+        width: 327px;
+        margin-left: 23px;
+        margin-top: 110px;
+    }
+
+    .capt-wrapper {
+        position: absolute;
+        background-color: white;
+        height: 22em;
+        width: 388px;
+        left: -50px;
+        top: 985px;
+    }
+
+    .capt-wrapper > h1 {
+        text-align: center;
+        margin-top: 48px;
+        font-size: 32px;
+        line-height: 1.2;
+        letter-spacing: 3px;
+    }
+
+    .capt-wrapper > p {
+        text-align: center;
+        margin-top: 18px;
+    }
     
+    .last-content {
+        margin-left: 23px;
+        width: 330px;
+        height: 1440px;
+    }
+
+    .last-header {
+        display: block;
+        position: relative;
+    }
+
+    .last-header > .button-see {
+        position: absolute;
+        top: 1320px;
+        left: 75px;
+    }
+
+    .last-header > h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .container-image {
+        width: 330px;
+        height: 121px;
+    }
+
+    .grid-atas, .grid-bawah {
+        flex-direction: column;
+    }
+
+    .satu, .dua, .tiga, .lima, .enam, .tujuh {
+        margin-right: 0px;
+    }
+
+    .satu {
+        background: linear-gradient(rgb(255 255 255 / 0%), rgba(0, 0, 0, 0.5)), url(images/mobile/image-deep-earth.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .dua {
+        background: linear-gradient(rgb(255 255 255 / 0%), rgba(0, 0, 0, 0.5)), url(images/mobile/image-night-arcade.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .tiga {
+        background: linear-gradient(rgb(255 255 255 / 0%), rgba(0, 0, 0, 0.5)), url(images/mobile/image-soccer-team.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .empat {
+        background: linear-gradient(rgb(255 255 255 / 0%), rgba(0, 0, 0, 0.5)), url(images/mobile/image-grid.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .lima {
+        background: linear-gradient(rgb(255 255 255 / 0%), rgba(0, 0, 0, 0.5)), url(images/mobile/image-from-above.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .enam {
+        background: linear-gradient(rgb(255 255 255 / 0%), rgba(0, 0, 0, 0.5)), url(images/mobile/image-pocket-borealis.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .tujuh {
+        background: linear-gradient(rgb(255 255 255 / 0%), rgba(0, 0, 0, 0.5)), url(images/mobile/image-curiosity.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .delapan {
+        background: linear-gradient(rgb(255 255 255 / 0%), rgba(0, 0, 0, 0.5)), url(images/mobile/image-fisheye.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .satu > h1, .dua > h1, .tiga > h1, .empat > h1, .lima > h1, .enam > h1, .tujuh > h1, .delapan > h1 {
+        width: 128px;
+        margin-top: 46px;
+        margin-left: 20px;
+        font-size: 25px;
+    }
+    
+    footer {
+        height: 438px;
+    }
+
+    .footer-wrapper {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .left-content {
+        margin-left: 23px;
+        margin-right: 23px;
+        text-align: center;
+    }
+
+    .left-content > ul {
+        display: flex;
+        flex-direction: column;
+        float: none;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .left-content > ul > li {
+        margin-right: 0;
+    }
+
+    .right-content {
+        margin-left: 23px;
+        margin-right: 23px;
+    }
+
+    .brand-logo {
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+    }
 }
