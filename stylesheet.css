@@ -104,7 +104,7 @@ a:hover:after {
 }
 
 main {
-    height: 310vh;
+    height: 306vh;
 }
 
 .mid-content {
@@ -197,7 +197,6 @@ main {
     position: relative;
 }
 
-
 /* .satu:hover, .dua:hover, .tiga:hover, .empat:hover, .lima:hover, .enam:hover, .tujuh:hover, .delapan:hover {
     filter: brightness(100%);
     color: black;
@@ -210,6 +209,12 @@ main {
     margin-left: 30px;
     margin-bottom: 30px;
     font-weight: 300;
+}
+
+.title-container {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .lima > h1 {
@@ -259,6 +264,8 @@ main {
     background: linear-gradient(rgb(255 255 255 / 0%), rgba(0, 0, 0, 0.5)), url(images/desktop/image-fisheye.jpg);
     background-repeat: no-repeat;
 }
+
+
 
 footer {
     height: 168px;
