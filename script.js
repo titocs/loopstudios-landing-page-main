@@ -31,3 +31,6 @@ buttonSee.addEventListener('mouseout', function(){
 //         captImage[i].style.opacity = '1';
 //     });
 // }
+
+// ------------ Hamburger Menu --------------------
+const hamburger = document.querySelector(".hamburger").firstChild;
